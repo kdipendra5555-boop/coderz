@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import ManageCompetitions from "./ManageCompetitions";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "http://https://coderz-1.onrender.com";
 
 const ManageEvents = () => {
   const [categories, setCategories] = useState([]);

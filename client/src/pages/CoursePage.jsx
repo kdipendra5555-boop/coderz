@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { PlayCircle, FileText } from "lucide-react";
 import Navbar from "../assets/components/Navbar";
 
-const API = "http://localhost:5000";
+const API = "http://https://coderz-1.onrender.com";
 
 export default function CoursePage() {
   const { id } = useParams();

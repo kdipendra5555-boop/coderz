@@ -14,11 +14,11 @@ export default function AdminCourseDetail() {
   /* ================= LOAD DATA ================= */
   const loadData = async () => {
     const l = await fetch(
-      `http://localhost:5000/api/lectures/course/${courseId}`
+      `http://https://coderz-1.onrender.com/api/lectures/course/${courseId}`
     ).then(r => r.json());
 
     const n = await fetch(
-      `http://localhost:5000/api/notes/course/${courseId}`
+      `http://https://coderz-1.onrender.com/api/notes/course/${courseId}`
     ).then(r => r.json());
 
     setLectures(l);
@@ -33,7 +33,7 @@ export default function AdminCourseDetail() {
   const addLecture = async () => {
     if (!lecture.title.trim()) return alert("Lecture title required");
 
-    await fetch("http://localhost:5000/api/lectures", {
+    await fetch("http://https://coderz-1.onrender.com/api/lectures", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ...lecture, course: courseId }),
@@ -45,7 +45,7 @@ export default function AdminCourseDetail() {
 
   /* ================= UPDATE LECTURE ================= */
   const updateLecture = async (l) => {
-    await fetch(`http://localhost:5000/api/lectures/${l._id}`, {
+    await fetch(`http://https://coderz-1.onrender.com/api/lectures/${l._id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(l),
@@ -57,7 +57,7 @@ export default function AdminCourseDetail() {
   const deleteLecture = async (id) => {
     if (!confirm("Delete this lecture?")) return;
 
-    await fetch(`http://localhost:5000/api/lectures/${id}`, {
+    await fetch(`http://https://coderz-1.onrender.com/api/lectures/${id}`, {
       method: "DELETE",
     });
 
@@ -68,7 +68,7 @@ export default function AdminCourseDetail() {
   const addNote = async () => {
     if (!note.title.trim()) return alert("Note title required");
 
-    await fetch("http://localhost:5000/api/notes", {
+    await fetch("http://https://coderz-1.onrender.com/api/notes", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ...note, course: courseId }),
@@ -80,7 +80,7 @@ export default function AdminCourseDetail() {
 
   /* ================= UPDATE NOTE ================= */
   const updateNote = async (n) => {
-    await fetch(`http://localhost:5000/api/notes/${n._id}`, {
+    await fetch(`http://https://coderz-1.onrender.com/api/notes/${n._id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(n),
@@ -92,7 +92,7 @@ export default function AdminCourseDetail() {
   const deleteNote = async (id) => {
     if (!confirm("Delete this note?")) return;
 
-    await fetch(`http://localhost:5000/api/notes/${id}`, {
+    await fetch(`http://https://coderz-1.onrender.com/api/notes/${id}`, {
       method: "DELETE",
     });
 

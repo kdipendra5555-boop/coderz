@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import AiCard from "./AiCard";
 
-const API = "http://localhost:5000";
+const API = "http://https://coderz-1.onrender.com";
 
 export default function AiToolsSection() {
   const [categories, setCategories] = useState([]);

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API = "http://localhost:5000";
+const API = "http://https://coderz-1.onrender.com";
 
 export default function ManageCompetitions({ category }) {
   const [list, setList] = useState([]);

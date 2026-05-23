@@ -6,13 +6,13 @@ export default function Courses() {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    fetch("http://https://coderz-1.onrender.com/api/categories")
+    fetch("http://https://https://coderz-1.onrender.com/api/categories")
       .then(res => res.json())
       .then(setCategories);
   }, []);
 
   const loadCourses = (id) => {
-    fetch(`http://https://coderz-1.onrender.com/api/courses/category/${id}`)
+    fetch(`http://https://https://coderz-1.onrender.com/api/courses/category/${id}`)
       .then(res => res.json())
       .then(setCourses);
   };

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-const API = "http://https://coderz-1.onrender.com";
+const API = "http://https://https://coderz-1.onrender.com";
 
 export default function AiToolPage() {
   const { id } = useParams();

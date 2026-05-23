@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Trash2, Pencil, X, Save } from "lucide-react";
 
-const API = "http://https://coderz-1.onrender.com";
+const API = "http://https://https://coderz-1.onrender.com";
 
 export default function AdminAiTools() {
   const [categories, setCategories] = useState([]);

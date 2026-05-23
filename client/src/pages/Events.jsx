@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../assets/components/Navbar";
 import axios from "axios";
 
-const API_BASE = "http://https://coderz-1.onrender.com";
+const API_BASE = "http://https://https://coderz-1.onrender.com";
 
 const EVENT_QUOTES = [
   { title: "HACKATHON", text: "Hack the problem. Build the change." },

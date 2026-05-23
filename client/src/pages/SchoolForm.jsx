@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../assets/components/Navbar";
 import Info from "../assets/components/Info";
 
-const API = "http://https://coderz-1.onrender.com/api/school";
+const API = "http://https://https://coderz-1.onrender.com/api/school";
 
 export default function SchoolForm() {
   const [formData, setFormData] = useState({

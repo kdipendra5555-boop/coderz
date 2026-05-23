@@ -37,7 +37,7 @@ exports.registerUser = async (req, res) => {
       { expiresIn: "1d" }
     );
 
-    const verifyLink = `http://https://coderz-1.onrender.com/api/auth/verify/${verifyToken}`;
+    const verifyLink = `http://https://https://coderz-1.onrender.com/api/auth/verify/${verifyToken}`;
 
     // 📩 send verification email
     await sendEmail(email, verifyLink);

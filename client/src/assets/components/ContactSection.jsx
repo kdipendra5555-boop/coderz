@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const API = "http://https://coderz-1.onrender.com";
+const API = "http://https://https://coderz-1.onrender.com";
 
 const floatAnimation = {
   animate: {

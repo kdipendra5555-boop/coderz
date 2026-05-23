@@ -17,7 +17,7 @@ export default function Login() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://https://coderz-1.onrender.com/api/auth/login", {
+      const res = await fetch("http://https://https://coderz-1.onrender.com/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

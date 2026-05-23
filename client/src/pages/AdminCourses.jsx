@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Trash2, Pencil, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const API = "http://https://coderz-1.onrender.com";
+const API = "http://https://https://coderz-1.onrender.com";
 
 export default function AdminCourses() {
   const [categories, setCategories] = useState([]);

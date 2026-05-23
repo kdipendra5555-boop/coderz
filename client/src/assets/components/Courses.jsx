@@ -23,7 +23,7 @@ const colors = [
   "text-blue-600",
 ];
 
-const API = "http://https://coderz-1.onrender.com";
+const API = "http://https://https://coderz-1.onrender.com";
 
 export default function Courses() {
   const [categories, setCategories] = useState([]);

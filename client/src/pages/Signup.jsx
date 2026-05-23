@@ -26,7 +26,7 @@ export default function Signup() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://https://https://coderz-1.onrender.com/api/auth/register", {
+      const res = await fetch("https://coderz-1.onrender.com/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
